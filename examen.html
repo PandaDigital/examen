@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Examen">
+<title>Daily Examen</title>
+<link rel="apple-touch-icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAC0CAYAAAA9zQYyAAAmUUlEQVR4nO1dy7ItuVFNnThAw7CxsWFCBPwNN+ALmPCwwTg8hsDdJvwkGIMDu/1gxCc0fIjHEMz4A9u8WgyqSpWPlamUSrXPsX0y4txbVUqlslSrlpa0a9cu77//W/TCVl8qdOkeQIcH0wUxnWZCg60O99zZslu1hrthTO/AI+35Bdq8EcD98JnuHwZwcUMtMxgbHKxmA5buVQHAi3RXu2HM3Vu7PRTgjwL0zSCOmxgDcSfVB4D3ihWzEYEcA/w6uAs6aArusLsB/XqAPAvisvYqXIk125kuyB2Aj4B7ANhhwSq7C9CvFshdEF9g4LDOgkvYQgS9m+34wgJiBk+A+xUCezWgXwzIOTb2QTzas7GMubkbAkGNVGwvG83glr0luBFrl6q9UQb3A3sVoF8lkEM2HgCxD96x015x1fwWWYnqlFGQG/ZW4J5n7fuBvQLQL7JqMQXkATmB4w+uoNxgvTZcECkajhlVtVeQLDlYezmwL3XjVUC/LJghkOfZ2MYdWDnJ2s2zQhS+oj12spzBvSZ430jW7siRHdi+xl4L6llA/9wAOQPidO8GjkvYW0/ikOFuCNw4wAfAbYC97XjALm7McKlvuNtmAP1wMHvyYhbIS0AcLgPea1E7tU/RJsYsuIeB3ZUh19l6FNA3gnkUyKDOEJAHQezq9Kyt7Dq/dYhnfRBPLVSRAvc0sBntdPW1y9bp7h4B9MuA+SKQe2zs9tQwgCf0duYywbB1aHpq8BwA3AV3grUxsMHksauvDYbToM4C+iYwX5QXaSCPg3gUwF7el82JBQfntgmh5tatGMUA3DnW7gE7J0MMW6dA/RIPJ+02wsqPAXLcWyBWErj/9Dc//vjY/qOv/tq7XK1B827GOgbwitEFQFengS309Thbh5YB9A3snGM3A+aVQO6CeB7Aka0i7/RF0X3WATjvR0WuonwNsEfYuogNz3qAXgzm9ay8FshVu6URuFJlXG0vvGi8HxsAq3RQW4i1Z4FdBQ2PsHWTICGoI0C/DjD3WDkD5BtA3HXpDiULLVi1AMXGUU70LLgj1u4B+ypbOxLEBfWDNLQDuA4rl2hCtBrIHaCFxbCwwqKykCdOAIAEnMmdKjJOR7eKSWCCtT1glx29LrA7bI3Z3idpD9AL2XkCzIPyYgbI0yB2wPtoyUHEUwGDcwDyYg+ZwFyW1MvADmTINFvXik7yRoZeKzEQK98B5D6IMfO+JtN9Cpl8FNyXgN2XIVZbp0Bt8kGAXsDOfTDfwcq2vi8r+FLaH6OlNAXiWQBrDvFk1IxVcKV+8JWftPP6k6/96jsiy+SGwTPghsA+awlgK7mTYWurrYEEsaCuZ63N+0nnfd0cMBeaA3OhXUidzFi0UwDmQvu1Uw58PfiHB7gL+6NKpf31rRT8d6fpthCYYT2idm4NJaqPQJe1giL6G0jKMFbdrmd3JD79Bak59Y48NENfZOc1ehmxcl5exNLCxVgDcc5GwPqnX/fBdZcJAg6uKr8eiLld1g6kSF6G+GzdkyCsHpshVirqvRwXAD0OZgSKE4hz8iIN5P3AD7/y4xyrTbKtx2TXzNACff/Dk517N1AE8OZDEtiyDFZwr5ic9KEYBa6EEOlc1RrRCerW4LMtnrFBMHeHG6drICvPATnDxiMg7gJ3pfyo1yamGfY+oCNY213JoC5jI7ZG2jpeBXEni/UA9QINHYP50GsRmJvGUhJDg9nqut0XCD5UX2rjzTgr/+ArP/k4q3+5Dj21qNKj/G+lqdjf+/CnjZ0/9/X33vG8MjdtdL7i+qlzgacmYlXr69Y/dTXChyQipatZ8cVluz6Y83r5JlYeYOTI7CCP2x4oXmJoNUI66PP2P9ppRAwcjvP3GBsx6zhb1+agY7Z6SFefTN009ITcWATmjsSwoKjLgMxZCWlQdA7c/vXbv+tEvma/98V/S/t+9MHJzp//xnvviDoXM9KkyN1xEKKn6uPWGYkkra0zutrq8SIwPgno9WCGQxdoE4H5CpBhOWvPC1KI6ON/+J040KS9+9K/44LJWY5bjYnR24HtTBrjCeMwqMuE5BgDc2YlIy0xkqzsXZ4IyFkQi6xWLlwE7UQF1WzE1fRE7jhaOuD25MgpRYrQHkaGHMUNjVkJYieLB37kcyBb3oOAfhkwX2XlK0B+hA62lr9TCui0CORdcDfNPQpsq68VTs/6TVszUIuNPqiPWBrUz/q8snYHmOclxri8iIDcBXFjm3so2rBbaNZTgxwN66xYRhkAts/Wh8N53LC1mjC2Zq+Bug4wtN8jeTBnJ38JiTHJylNAdkaOuySH6Y+gHVykR9IzoMfehk0TwI5kSN1BeAQdliAQ1ESl4jyOHJKABlLD6/GbwIylCWCnQSCHbOzk9nDrSSZ3UmWPcPZGzG1YexLYJ1uXhkpPguRBTUSlQlAfTglAx2COwTkO5isSw2f0ASAnQXy35IhbDypQ6yInhgJ3IEsEAJPADrW1I0FcXT0A6sO/A2hnEij2zxZvBfMUK68Fss7/NsnhtQnMTYGfcxfcpfX9KLDNxzYRW/ckyAJQpz/6tsBqpxiAGdSH/mNg5o9Jeqxcjl7rgbkQexyysj8ei52PinmLFZ6H/lOu4C9ywn5n/ELUHiXgH9qQrtPijYyWkmCMi7gOzGdAEQSABsw6DOaaSMKCWXR4OXwkmI/nLrSJ5w5QPJ6HATKo4yCl0CY57vg7QNWesRB/Vf4FuXvnrcEtbYv30Zc3MCNQG2Cz6yOKEtcHxcuDuho8OYAeWNFAbhfBLHdOBuDMTCQ/rkasvATIoOw4HPHolT+QsvtngN4BOCrQZd/98n+Jfv7og59+7PWFjGPZGj341Pq+y7zjoAaAjieBohGU6E1gJsLPK3//w5987LGyNg/I7YIHbKxz32cxj0F0YAbkHYCHwC4WzEREf/bNX3nXYoOqcifH1neBOtTQkH2dwtVg9u529PD69z48GSRi5aNtmHeHjVtd9ojorZLDzaFvLoN7c4PdvvPXGMzt3IndMKC9tkP+9bP11oJaAXpON4ugblKnTwbM2nhnQFB/8NOPPSC7rJxl43ICmQPhNoIGiDbfV4S5WrPg5sx9+iAw//m3NmYWfUE17DvRaALUm/s6UDNAJ3WzAejhexHMx4VLDlef+/p7BtRiAhMB2SQas7ELnpeUHAjsKEdcRbD2PzpgPirBvgHX0uzOgFpg7oyTBTWUHLY9wNxOYJvEGSNkZrJgxhOKUy9/7hsS1MfzwMXpgCI21HGWpwayZ/dJDvuXQj4AuGe8P77wt78s+vELmpkb2eBriqUE2wG62r+2Mg7f6YGaqAG6JzVQCzygYmdAZSGYATNn1zEPEH/+G++9I9FJ4MQXAPm4gMcHX48i6AL/NNhtpR64j1gHqL/wrRPcph8YsE+LtTXfyI2+Y/JDxicq77//m9WUCTAHuhmB2fiyE3aTTII5YHf3DgbOFshOTO4PCv/5m7/t1Lhmf/jBf8QOHVnij6engxeiig19Fa2j5tQKnKvaQR/F6E9dKxVRsUJfdsX3Y+Kjb9BMUHaWj4CZjO91MIesLJtjNg/ko51HPMthW3UcWCq8/+EVPK4RAPbhVYUDe7xTOcpHOvffVCkSoEXVK7UaUOvnQArtH5Wjgaf51pbb8RH58xlAJaoCmJNGnQqGNvepOcbunu/mdgOY0QRW+zpALmLvsRYCXRdKdUYnuGeBXdpxPaRrUBMVANBxUG+kUxr31MD3ALV8OMmRGsYFSQ0DZjC7FRuJr9hP6CkNRsTKY0B2wG+u7MsZxDK4847+MqydAnbM1hbURKVICZIBtW67RqBuZ3PebM/63FWqeamhyl1gOWC+OjnQI4yt4+c8DGThsd5KwZEr/BFCUJ/X4QcUR5m3iXaAHbJ1aV1sJIj/xJwFNWZ2B9TtRjpB/SxqkgaBPSnPjw9t2kGD7RYwo1wPP6ddXBfPC9DuXRrasxmgCywrpIfA9kBNxArV+zOO6kBXXwf1uWHaZHr6mZ+jAIoams8Lr04TDOHxl1Jj3bzuU6PdD+SH6h3+HpDhKb0WycGA7oE7Ym0J7Jitm2+hHXU5CXId1L48sV/BAn64alJqoDglCWYvh5Vgvgrks4VbzGsz094IuDGw1eRx70P4vUEG6naMOQyBmixoo5UPW3fL/FkOx72JIJkCPrS7AAPMHq9+XASzo5dH5EUE5AM0t0kO3Ti+LLrYhumA2wBbAE3KkPNrUrJ+RlenQI3kBFlQU0dPw69gmVNngJSM61cMAQqrOVp3Asw5iYFZOQNkFuIx1kGykRMoRLsJA2AbtgYyxJUgq0Ct3jAKco30NFvlCNh5QmrIGD47h2DWuR37EMzXJYZ3Du5kzPG/alFfijYBk/fA3QO2z9YM1ORJEH+yCEHtti3LR/T0sz517paVGrriiNQIwazqXwfzGiA3VrptlcOPW8BWtYe64PaA7bO11Nbei2b0ZDEEdSnBaga7iWB7WHo8owssrcfOiHGPDQmg3iTQi9nCDYD5isToAbnt3E3RYXxNQmosc8A9AuweW4e6OgVqfGOc7v4kseWiQP18lZ1jqZEoQ8BqO+xmWgXmCVb2bvrbJQdIspoNeSAEdwfYWbbO6OocqPc45qY5NyLeQGXlU7/+2dYTFtC9iWC9xs4OmNXloEJEX/yD7fmAp1KoPBV6KrT/H+yXQk9Pe72n0t1/KnnfUpI57PtPT4U++aTSJ7VS/aTSJ5X2/4P9WumTT7ZXjm3/B/sjvsd+Jod9/zsf/x/xy2LG7WrBVYnY3SBvRiVEd19yfBXqjF9pFdoD/il2VulCFwDSNJgJg7mfy5vdbXiEkwIYj5RAASBiDNrrLyqcG0/yqGwkTkLWkzdEZlJjDb7Y5A3Mr8Y8UH/7r/67/c5jD9S8wPgG1zqWr2d883DSDDtrqREn6UsNIqLvflmCun237c1ehRUi+vu//B/zHUTugJ4DOfTyvJ7OrXo8Y/BG7Mxaw+fjWl83Wzu+jfyjH9kvxb7Z4ywEMRE1QBKZ2drIJDH60CV63PTwsw8nJYb4GXaOgb7VPd4BceSBvlr/Zq/DvvR3v/SOT9w2QMklPfQAPgS1sOQnhaANokrl05/6rFzdubCywdOYXdXQN9Wx+Re//7bK8ZKrHB/9y/9uV6lqNMgNvfphvytIbeVDKwY+fZxd9ZCvMVionbNhM2CGk4o3exHT6/TeRNGUi0pm0c/I2j5msPnLdl7lhHbOTgRzs9o3ML82GwJ18fAEQG3a8drwpa37KjDb2nV2RqsaHjtzv4Ssf7ObTV+DHKhx5dy1tosPIdHu9qQbCMFzkZ1tHXwjcKnxBubXY2lQN4vmVISlh6qPJYuMzeP777bLaJrL7Mx2zQ31JjVelTmEB0E9oqcvfYBnLfikcDzoNDu/SY2fDUuC2vrizy4i6XHaGEs/9SeDDlN20DbEztk23+zFLNTInm+6zEqPWZY2L2tEXj7oI+D12Tk7EXxj6tdg9hFcbmnpga5tYoKYZemnUbnhujh3UDZOyM5viH4lJkE9Lj0I7Jyx3aKwnjxs16EXTAbddeejLErwjZ1/pmxMXuAJ4oyWlqPFGfdpRK/mJ4O95Aa08xuiX4e16xB/+2dEelgb09LI+j+8OQgoewIDYd7Y+dWaZNExPe36ufE981n62H7yCi7JjU4ZBn3UCW+rHq/BJB56H6rgsmGWBlod21Zv/KeR9fbFySD3eWPn12/R158i6WEcwKEcS/s+hXqAHkZVfzKIk47Z+Q3cr8yS0gNWIYmHiKV5BU856Mlh+cynP1PdivpuPCrxgMIHALr4gD59QJK60zosYNli4jkCdf5u3X3ja5//LN1hX/3ef6osYkPvtRBnJ55VRvXYFYLPINtPHOQ3r/12avit76L2mZ9+Zjp4Xpr7iPdDd+8CvZ2RGzPmxO22AUCvK+XAvB8KwEx0p7L3nn/AH2UdeepviBDtX1kq1AbPqurhb5WwfaKNcDSooR+FncKLy54dsfxWGHxZY2txyMbkRjgZTJRBdtb1kC5H52XA3Ps5jQ1at70JzOv7euTlA9u+nqsDamLAOvYRwAqJL79Kv7P+GfPIyb7AJmdbTH6zmO8e6vZKBGht5WhksSHQ6e1Mf7g3k7bkI4tolNBy5gG/gmVYcW+3bWoOh2wdgLoBRYKSN3mAyI4XmnHVQc9AHmZ7krXTqxxT1gVifqmuq511TCg1QApIamXAvLd0x5/O+/hDB9GPxBMhuST7BcutaOJOqq9YLqyuOUxz1wvFRPloa2/wNxcVJSaSTPiwpLDcSNid7BxeoBjMRLcRtGuQuQs1xk799l/A1CR8T5a8k6UzNiI7sOQYljx1og7l5MZMOraZxM008Y7ruyQHS6SajSMfdvg4t/0VAfHEr/dui470EKCas1Bq8O0J2XGf5JgE+Gbjk0E+GqSGLzUq6XqSnQGY6U7Jce41dWF0BzjVPVftNvr2qlh6xDLRH9EjZEbXrWOqTm5SCC7q1YZT8QbkhncoK3Vm3qL6GMnBb+DtLqzyMJAO4A35jKkbE4MXhsfva8YsDYl0mexQI0anjgL0jfo55R9vxzbPzrHUiJq8SXLwJmSDe7kFtpEg2d8qccvq0RIY+oEsaT5YskTtz29bHf2sdeyULRgqUlVCueGEHWT5jNQ47DaC5vmwRqra0u+BO6pyUPNgI78oNcquKSDOrEkP6uj8OrRriy5rQj/7dfrFHKjZLvVGpa3sxg9WnCQyPz2s60Y/aNnHimVpD6xu7uk+2m++QQBrs5PCy3SdibFIP+t4GbmhyjzQhxPTgcxmrLA/VCCPB2vnzr40PEHsn2M8OUxbqjM78ViMPkN3Lm7KZphUbyfkxmi7kU/EzgcIHvFb30Ibs4Ojv/3nSQ+XECdkh1fkyY6MTBltd4HkONuQ28GEcIVuT+UQtTv78pyT0e57loNri/Pii8wGQR29W5lraZEG4cnhNBAnrN+unBim1qE9tloPygcPVU64mJ3vtyY3Cm2o9T469uRHpg3nOo6d7k3S8YIJhp4/sYt2qbFIP69tV/fP3ZKDt5f/lVYSVCZZLWJpJ4HRU2x1cst3y9rdjb3BfyZCvQf5D5mYenXiSSSP+8hnOc6hl0kAVug94yADRC1g2ZFLbLDOHTF2u/dpO2jrUJCaTLINTz9n5MYjR6zizDGaDAHzE+wcH171gFlm+7rlcLNsUths0VnIjnc05EPNLm/dKjnKid0qDycewPcfgNcrHo+yzErHigbWA3oiD7R93fJrl9Mt3IZnBjqgkTdQV6Ia/fgOrUFLRqosunIrVkzulxzgXC+f/m26/YGiOLBtlaMSn9k9hlNf55wIVndiPmecVtjLSYXr5o0ij1jliL9IqiaIGdlBa4j7payX+4tLjiV2i27v+98GCnfZTW0vQObYsx3ZoKsCjdutgB4ZKl7KViyBrzYL1oilb8zhMU3lDCSEcvz5YOhBmwIxqHT7sxx3oGoi5qsDd2C/kIBeZa/jIs+sMrzmOjN2tvMG6Cv2KhA9/ZHoK60zY2c7v5CAnuINUOl2yXFH+ImYr+K+TdqtgIbAeZkPqly7ks5dF7o929Os3Nugl8NrMpAQyvHng6EX3SQ8TK2JpbtbEW2bMNsL2q9OW9eCrgo0bhLQN7LnKyPmIRNA59s3Sw7xCBJsqsgi8RF5iW+Gn1Hr5X4/QyPtaQ9djnnZKu2UnL/c9xJ0EQceA8LyanR7t7oT88Ulh8d+160DzhWN3fpR4dmGbmaTG4qdka3Irxtj3RVbMYqsB/Qtera0R0hfTrrsnxGXM4dbWdNhZVc7Z+TG8cDHC5jIB73Vf1EDL8DQ66Dgalu0XTdSO57C5V9G8jXyOTFEN9JdGtoLe4J5np0lsJzjZpu1VzP+YQqTlrsRn88LNQO0k7WW2io5MPXBVtQP6nwfvYzmgTlgZxkgskn9/BBZkzfB0Pfp2Y5damwH4DSA59wr3Y9nCVpnmEbSxGXewQ66BPAL6LnQsSnJMTIMX7OBUSLVeD5eRnaYOndJDrFRcNm+IzPwX85o2kjIjb6tfsb2OpqWaWgLiA1MfT27zq7oaBnEvxEqle3F4nfOCsELDRELQzAjoNYeO2O5cUU/r7J+u/Im7gO6qyuTWQX9mZrcOSsdYegMizs+MUtvWvoREtrTwyNgNizvsHO/4byPC3pHOg3dGIGDBfRDJmSJG2Qoj0hHx5M8uNrRZek96t2SwylIg7kXb6/fY163npPf8MRkpi0nxgLJsWjsbWhap6Ovyp2Ipetdn6qhJOzmbhbMuq6WGmPPbuTlhtd+3tjE7II9L9GzM6w+UScjO0zYQdkRsbQF9U3WBZ0FmvHvSI0WB7H+hNzIyIepH+Ac7GTF0Nc+cLDbwcRwYju2AdkhbuL4jW9R+w+XHBkgt514xaNf5re1Qm6kboDutv1ENPdeDnC3D1umU7p1cj7m5KH2VHUQKwJgPPq3Cbd+Ki2PWmkKzPb8HO0cnB/vl670mLx21hROOnXu++j7kgwJJmSh7JhnaV0vIz3uAzdYCXDaGgVzix9KjXl2npMbF/SzqoMBPQzG/epOAJjr9+uyw21me8VyiWL1pId8p2etN0qORFgERJS9jhWtR3Op4bZX53AHY/W2Jxp6OmpHugRuoyEabscz5a4NDF3dYZDnsm8YP1d6xGB4hFX2Jw4S/sVvF8whO7Nd4wfaQNvL5IaN28PpvU/bdakVSAtHdgjGDh8nxbKDs7Ruz0wQXekhmfoRerqnT72bbBTMHvnodn0CKPgwkfthiqgHTzS//nxYHtBASy6xjOzIaA4gKXA1u/Kiy7OgfqkPVqIVDJTSCJj9XNaz82q5QRStcgwHdGbNRxnJRKOOokRZ9q5PdZRhHjCxUhu3yo/q/O3SYhmYSV6ftp/oI+mXY+cxi+Sh/wWGZ3509QPw04bYMdMGYGksPQpRqcZPf8CEPkgRTH2b5IhuVmsYyCyOB2ag9qScOTbATQT9Onl28lthz0NAnJEdQQMcIJ7siOKktLSbApAe6qYmqiGoH//BivJzHBtYEOhMXaybs1JjmJ3dm49tOzdgLw5R74OVm2WHqOe27a+6QBPtYwY4cyio2FxMyGQvZNtyoc/K27g6AWYVp5UbOUb42ixlZ81cOblBVPKTwkuyIzMMrGRpID0g0yJpY+oypibpf/ubwJLxPYAgIJqbVTlX19/mFNW9ys6hBSNT+Y1Pf4Zx1bbBFRz8paQi7xPjU6r0Fz6srOi44NepWD1Yh0j8qBCOXcG5xfmidnQOyhUcuHflujsKqQP6LBG7nsecibHDzhb4uB2dswV0NBnc2w3y7T/LMchCngZKhUEnmMgnYoOoA09fMPQixjouIgCPqVsP/3hlYtQOWSGkRdXlttIomFG7WalxHzv7cuPYfhpZm/DAlhoaAwbRwyB2nGOE878Ok3mgRgxB5D4kBIFtwF2sL7Cz+llPgDgDZA/MoP62gXV1BGaJBTBJTFwHYmUhqXU6rTE0Bkv0lfjoRuhPDt3kQpb2Z9QwRa8sAWoNTJsHAzZoOwR36z8NcvlHCMAAxLAbBZABmFUMff46lmdj1wCQDsgJB8i9POepT/NOY9oF3e0DcXIsbdlX5pBkB+qD2jRREXjYKohzbi7oNEijv0w8nidjU10P9iVREsz5UVI3Ym5uY87I0K0nDz/xYF5FjzFXfpNYO/l38NVOvQbqHltnwd0D5ojvAeIuKy8Es0lhQGpk2ZmTHDx3xc5ERE8+WM9g0Dqs7cXN3SzOpCTRlls2AOqtk09QIHbFbK2kSIhC2+ZAlfPmqrrfYlaWu4WO1YFRMF++HsLGtHPk9wSPdjJxbwITp8/SbvuAfT2WNm6ILdhGD9TNhzGAueiMrW11BmxSzJ1CKzAOYNEu09rSFbKyBLPT9YNgHlllMi7OtYftGx91nat42q6QPvvrL2U5m+Tbcmff3Y+dRTaurMZyErkeJ1fE+nSrK9o520BvSGp5UWlr1UdEcS5ETaXIEPrG8ulN5G6L3Zg6XxTAEoOvV6+CuRpfR76xNkRZSGQdFqedoW0SjjmFS1gaxUOL+6rDo/RmmNrEOPyYBEFtacb2Lx7+O5fyfB9PinmMbPMMJAYtArNur/mCvLrvuB5jZ6IN0KwkmhzOvXPYvaPaztgEUQea7nQH1O4wfPyjtLUHbA3umHUPiybZJrwEMQDMeWgDcvfcmP+aftWFXntngchZ+fXYmYjKM3dA8oBv4wOgTtXDd6HjYYjYD8XbZIHJqR2Q0kO3sbWTlR/7wb1jkQSho20qLQjvXNNXfLeP174FdwZkSAeQrQ4Y8ZaShLqJNGCjGz36Jr7nJz/67tLIdZbGZZilz/i9VY81jKLZGkkQ4asYm5fBc9b0OvMXhDxNMrJ7DoCVl4LZadv7VJaDvY8ZbOBZjjGR7h2efUtPbjhCbVwH9bmpJMgQsDG4u1yRND/m3nYWyF7fEU33HyIE45+8tpjYZHzdRqXzAf9ylMEvkoK2jCSpZFY8st9o2crsqoast8mW+Fslc/KDqC1isPuuyFu7kvvKNN7hLVe9DALP7qpJndmLbwGVAzLRSjBPTgR1u7aNQlS8j74jlrZi3WvQlvkszTtEd7xouztizK2bXmVrXkewYC2KvWeFNKt/xGT5dHOaZGWicTD7o25Sajjs3H+nyL4ObRi3y9L519BmJ4jnDpsEMgfB1KrHbM7jTG3Og856kK3Z6UQjD985/eZnh1mWt2x8to2A7LmvWiXKgNnNh90MZ14gfpWfFBbjoIJGzCiGgtkJontna8few+dEWaZGF8xj63ONWFbosbaOfeUv1QZ0Bs9ls37J9o2u1wPzdl0AHpBvcILxCHRSpn18tCURRCAiV+sA8MCXnngg22OjXOTFWAPqLb+OBHGBDeRIzYNvhTWwVwTkLUcI5Cv9QfY6ZcDsk2P82ojUO673jSdVsoalB4YIFYK1gVke+6rySVB32doA+8jTsvZdAIcARn2rl+HUOWRZmYic/suAGcQwNv9zGnv9wvN65pq0suqVHC1dac27lY+yfUP4tp2EnkYrHyZ3pamJnGcvyNXWzVfs8OtQWCwzJKGjOAHUcMqC1YMEsC5NlFE9BkafhHq6Oe4CVPakGyPTxb1llmgIiN+tHGpthAl4YfDKx8FixPzAuabZusXUO4C17fMYgdXgL7QzPvxKl4rjhcyy8rnJbttLYD5jeNaXGpKdidrTdtdYumWqGbTS/KpH81W5DTC1ba+9ZjHN1kTkMnarYw7oC1d40SULcY4HBuzqfA6fYmXCQBwDc8GkpWL47WHJej5tJ6+EGP37LN1bDO/eaS5jGlZQTpKpcR5X1mC3+pjFjjouc4MLdvUvDBj5Js9FbgAw1wjM54jUBXPYdmpkhycBX2MAO+7SBLHDFrTHR77VdqoPaqLo8UgEag3EWTCwEPZm6SKzY50YmbCZmxLdGBm9fIL5PObX6U8C+1iRefLCZ6rEhnshH9pYX2lggsj82malrvSQvmxftJORH7R3Lp4skmj3uEmraIvdW5AGODC0HBFtASs9h8CG74PO433mxhOb4xIDxRwDM7hhTLulUTRq67lFUee+H5Io5KsOup2WcDUgOlqvxf6sg/7tP1FOF0Dd09XEnbG27gF7i9UHt/DvelyzzOtrR4CMWLn5rgJz249vouqBmeUOviR7oqPSeQCdAE4c382DSaucdFux/Dh3S6sDh0pTgGUI3wyHw31Yn38n8pxl2jX5g3NDWhn227HBZOglMNckLhxe4b7i/dBoqFfniH98p7Hn0WYVDpyl/dUMmXz7gXidRsTU7JTPOqU5oJFFszyXIW2Pd26CtbdzcsawBIuPxgzruDvqxlcFLisTUfiaB9PMCjAH8dvOFsM8nHQWMrDMSg8X1ECaLAA10biubnWPpiJgi4YMzlP2CPY2YLwI5FZHjdAxK2++a8Ac62aeE/zGinBSZ4+GG3xCY0szyLryo+UxIkH898pVovHnIardnefgOYNtg2S23aO/+vKChwm/SwmuPVExfdkDM2rbBTMvZ/vw3Xa6MrtrFKhtC6bRcPiI787NLQC1qOOD2uxOfatja6P7qZwD8BVAD2M6DZ2HFIj3wvy3cc7jJoY4sIM+7H8M5vSKhhe/ql/BqqRP2UgPeRBJj0rdn3UQJ9ZZ+djcAvlxnFxSV5+7pfWC+0nh/o+djvDRSfME2d4HOVyyThDFP9DBC+ERDgKyPW4lhtlNgpmvaPi+7Drsx8TDSSKDNnk7J3lMf5YdMPVYXzYgIwlq7mBvgAFQE89NNnjqamo5ncmi3FiwBLBbmQvuc8tciSVIxtYF8O4UpRCOnN1YFlg4bhrMQt+Z0VC3ycx/lkOAmgWTwCgQ1AZtwSRx30mDmt0cENR01Btha6IMsFs9F9znAQ1w6zFmGIydSB0Qi7hJINvjWGLY2GvADOmC5QV/Y8UABUuPY38HtQ0iVxQ6oCYG2GP/AE7RPnshk9cZCUK0DtitblU+DsBNvTsMAi50vQDkrV5GYqAFAGe+5Cs3AGbUNlvlAJdNnMiJAJBLoVqseAdDk05CdGzN3sV7Pt6dLNqWk6FKuCOqOVRITx57Q3bdcxUP3t+FXhY/+0UCkVIl8t4poivBvlkL5tKYGd08CTAfm4qhe9ID6mnGtKUQ1aP4TGaEqSsZ+XF0gn32ozAaByNLbX0qtDXvEC0bfMbeSvkycjTg2wubq5eKN1sPsLEbGxKXr5XFobbRBfMOsYCcBsBM1PlZNw0QDTwz0aq0o67yDxSnQa35GoGagK4mwsDW2lrkrSrxTkVyhIjS4NZ2F2nD+AxcqRwQQ7L6oVYW9cORlo3m68BMFWpo54IXWw5Z8wQ1seJG2yOgznyiuLlKXW1isbouW+8bSAtD1lYVEfnNMPGoIYkQte6xsVuWZeW2EzyTri7vajBXciaFGtSttpYeZIEDQE2F9UotnNjmQU1EmK2VBDnOhjse4NPA5lt51mZ7asyNPuVexugdAIf1lwLZZWVz8C4wE7mAPoIp0CJQG+Z1QX0UFsXUFYG6nU4Dtb33R9i6xWNJDgFbBdDXOAa4rSWKEBZdFPZvhdwNsADI7YC4MuelhvVl36B4s2AmIvp/cX3wWihWECAAAAAASUVORK5CYII=">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+<style>
+:root {
+  --gold: #B8960C;
+  --gold-light: #D4AF37;
+  --gold-dim: #8B6914;
+  --dark: #1a1a24;
+  --dark2: #12121a;
+  --text: #f0ece0;
+  --text-dim: #9a9080;
+  --safe-top: env(safe-area-inset-top, 44px);
+  --safe-bottom: env(safe-area-inset-bottom, 20px);
+}
+* { margin:0; padding:0; box-sizing:border-box; -webkit-tap-highlight-color:transparent; }
+html, body { height:100%; background:var(--dark2); color:var(--text); font-family:'EB Garamond',Georgia,serif; overflow:hidden; }
+
+#app { width:100%; height:100%; position:relative; overflow:hidden; }
+
+/* Each screen fills full height, uses flex column */
+.screen {
+  position:absolute; inset:0;
+  display:flex; flex-direction:column;
+  opacity:0; pointer-events:none;
+  transition:opacity 0.45s ease;
+}
+.screen.active { opacity:1; pointer-events:all; }
+
+/* Background glows */
+.bg-glow {
+  position:absolute; inset:0; z-index:0; pointer-events:none;
+  background:
+    radial-gradient(ellipse 70% 50% at 60% 65%, rgba(139,105,20,0.35) 0%, transparent 70%),
+    linear-gradient(180deg,#1a1a24 0%,#12121a 100%);
+}
+.bg-glow-center {
+  position:absolute; inset:0; z-index:0; pointer-events:none;
+  background:
+    radial-gradient(ellipse 80% 60% at 50% 55%, rgba(139,105,20,0.3) 0%, transparent 65%),
+    linear-gradient(180deg,#1a1a24 0%,#12121a 100%);
+}
+
+/* Scrollable middle content */
+.scroll-area {
+  position:relative; z-index:2;
+  flex:1; overflow-y:auto; overflow-x:hidden;
+  -webkit-overflow-scrolling:touch;
+  padding:0 24px 24px;
+}
+.scroll-area::-webkit-scrollbar { display:none; }
+
+/* Fixed bottom button zone */
+.btn-wrap {
+  position:relative; z-index:10;
+  padding:12px 16px;
+  padding-bottom:calc(12px + var(--safe-bottom));
+  background:var(--dark2);
+  flex-shrink:0;
+}
+
+/* Buttons */
+.btn {
+  width:100%; padding:18px;
+  border:none; border-radius:10px;
+  font-family:'EB Garamond',serif;
+  font-size:15px; letter-spacing:0.12em; font-weight:600;
+  text-transform:uppercase; cursor:pointer;
+  transition:all 0.3s ease;
+}
+.btn-gold { background:var(--gold); color:#1a1200; }
+.btn-gold:active { background:var(--gold-light); }
+.btn-gray { background:#2e2e38; color:#606070; cursor:default; }
+
+/* Tab bar */
+.tab-bar {
+  position:relative; z-index:1;
+  display:flex;
+  padding-top:calc(var(--safe-top) + 4px);
+  border-bottom:1px solid #2a2a35;
+  background:var(--dark2);
+  flex-shrink:0;
+}
+.tab {
+  flex:1; text-align:center;
+  padding:12px 4px 10px;
+  font-size:11px; letter-spacing:0.1em;
+  text-transform:uppercase; color:#555568;
+  font-family:'EB Garamond',serif; font-weight:600;
+  position:relative;
+}
+.tab.active { color:var(--text); }
+.tab.active::after {
+  content:''; position:absolute;
+  bottom:-1px; left:10%; right:10%; height:2px;
+  background:var(--gold);
+}
+
+/* Gold divider */
+.gold-rule { width:40px; height:2px; background:var(--gold); margin:14px auto 0; }
+.gold-rule-left { width:40px; height:2px; background:var(--gold); margin:14px 0 0; }
+
+/* Step heading */
+.step-num { display:block; font-size:13px; color:var(--gold); letter-spacing:0.15em; margin-top:40px; margin-bottom:4px; }
+.section-title { font-family:'Playfair Display',serif; font-size:38px; font-weight:700; }
+
+/* Scroll blocks */
+.scroll-block { padding:36px 0; border-bottom:1px solid rgba(255,255,255,0.04); font-size:18px; line-height:1.8; }
+.scroll-block.prayer { font-style:italic; white-space:pre-line; color:var(--text-dim); }
+
+/* Scroll hint arrow */
+.scroll-hint { text-align:center; padding:12px 0 4px; color:var(--text-dim); font-size:20px; animation:bounce 2s infinite; }
+@keyframes bounce { 0%,100%{transform:translateY(0)} 50%{transform:translateY(5px)} }
+
+/* Pause section */
+.pause-wrap { display:flex; flex-direction:column; align-items:center; padding:40px 0 20px; }
+.pause-line { width:1px; height:48px; background:linear-gradient(to bottom,var(--gold-dim),transparent); margin:8px 0; }
+.pause-text { font-family:'Playfair Display',serif; font-size:20px; font-weight:700; text-align:center; line-height:1.4; margin-top:8px; }
+
+/* PAGE 1 specific */
+.p1-header {
+  position:relative; z-index:1;
+  padding-top:calc(var(--safe-top) + 24px);
+  flex-shrink:0;
+}
+</style>
+</head>
+<body>
+<div id="app">
+
+<!-- PAGE 1 -->
+<div class="screen active" id="page1">
+  <div class="bg-glow"></div>
+  <div class="scroll-area">
+    <div style="padding-top:calc(var(--safe-top) + 16px); text-align:center;">
+      <div style="font-size:14px;letter-spacing:.08em;color:var(--gold);text-transform:uppercase;margin-bottom:28px;font-family:'EB Garamond',serif;" id="todayDate"></div>
+    </div>
+    <div style="display:flex;justify-content:center;margin-bottom:20px;">
+      <svg width="72" height="80" viewBox="0 0 72 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g stroke="#B8960C" stroke-width="1.5" stroke-linecap="round" opacity="0.7">
+          <line x1="36" y1="4" x2="36" y2="0"/><line x1="50" y1="7" x2="52" y2="3.5"/>
+          <line x1="61" y1="16" x2="64" y2="13"/><line x1="66" y1="28" x2="70" y2="27"/>
+          <line x1="22" y1="7" x2="20" y2="3.5"/><line x1="11" y1="16" x2="8" y2="13"/>
+          <line x1="6" y1="28" x2="2" y2="27"/>
+        </g>
+        <rect x="30" y="10" width="12" height="58" rx="1.5" fill="url(#p1cv)"/>
+        <rect x="14" y="24" width="44" height="12" rx="1.5" fill="url(#p1ch)"/>
+        <defs>
+          <linearGradient id="p1cv" x1="36" y1="10" x2="36" y2="68" gradientUnits="userSpaceOnUse">
+            <stop offset="0%" stop-color="#D4AF37"/><stop offset="100%" stop-color="#8B6914"/>
+          </linearGradient>
+          <linearGradient id="p1ch" x1="14" y1="30" x2="58" y2="30" gradientUnits="userSpaceOnUse">
+            <stop offset="0%" stop-color="#8B6914"/><stop offset="50%" stop-color="#D4AF37"/><stop offset="100%" stop-color="#8B6914"/>
+          </linearGradient>
+        </defs>
+      </svg>
+    </div>
+    <div style="font-family:'Playfair Display',serif;font-size:28px;font-weight:700;line-height:1.3;text-align:center;margin-bottom:16px;">In the name of the Father,<br>and of the Son, and of the<br>Holy Spirit. Amen.</div>
+    <div class="gold-rule"></div>
+    <div style="font-size:17px;line-height:1.8;color:var(--text-dim);margin-top:28px;padding-bottom:12px;">All the things in this world are gifts of God, created for us, to be the means by which we can come to know Him better, love Him more surely, and serve Him more faithfully. As a result, we ought to appreciate and use these gifts of God insofar as they help us toward our goal of loving service and union with God. But insofar as any created things hinder our progress toward our goal, we ought to let them go.</div>
+    <div style="font-size:15px;color:var(--gold-dim);font-style:italic;margin-top:10px;padding-bottom:20px;">— St. Ignatius of Loyola</div>
+  </div>
+  <div class="btn-wrap">
+    <button class="btn btn-gold" onclick="goTo('page2')">CONTINUE</button>
+  </div>
+</div>
+
+<!-- PAGE 2 — PREPARE -->
+<div class="screen" id="page2">
+  <div class="bg-glow"></div>
+  <div class="tab-bar">
+    <div class="tab active">Prepare</div>
+    <div class="tab">Reflect</div>
+    <div class="tab">Review</div>
+  </div>
+  <div class="scroll-area" id="scroll2" onscroll="checkScroll('scroll2','btn2')">
+    <span class="step-num">01</span>
+    <div class="section-title">Prepare</div>
+    <div class="gold-rule-left"></div>
+    <div class="scroll-hint">↓</div>
+    <div class="scroll-block">Settle into a comfortable position. Take a moment to quiet your body and mind.</div>
+    <div class="scroll-block">Call to mind God's presence. Enter the quiet space in your heart where the Lord lives, and be still.</div>
+    <div class="scroll-block">Sit in the gaze of the Father as He looks upon you with love. Respond to His gaze with openness.</div>
+    <div class="scroll-block">Imagine Jesus sitting beside you: present, listening, attentive, and loving.</div>
+    <div class="scroll-block">Lord, help me to see myself as You see me. Help me to know myself as You know me. Grant me the grace to recognize Your Will throughout my day - the times we worked together, and the times I failed You.</div>
+    <div class="pause-wrap">
+      <svg width="48" height="56" viewBox="0 0 48 56" fill="none"><g stroke="#B8960C" stroke-width="1.2" stroke-linecap="round" opacity="0.7"><line x1="24" y1="3" x2="24" y2=".5"/><line x1="33" y1="5" x2="34.5" y2="2.8"/><line x1="40" y1="11" x2="42" y2="9"/><line x1="44" y1="19" x2="46.5" y2="18.5"/><line x1="15" y1="5" x2="13.5" y2="2.8"/><line x1="8" y1="11" x2="6" y2="9"/><line x1="4" y1="19" x2="1.5" y2="18.5"/></g><rect x="20" y="7" width="8" height="38" rx="1" fill="url(#p2cv)"/><rect x="9" y="16" width="30" height="8" rx="1" fill="url(#p2ch)"/><defs><linearGradient id="p2cv" x1="24" y1="7" x2="24" y2="45" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#D4AF37"/><stop offset="100%" stop-color="#8B6914"/></linearGradient><linearGradient id="p2ch" x1="9" y1="20" x2="39" y2="20" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#8B6914"/><stop offset="50%" stop-color="#D4AF37"/><stop offset="100%" stop-color="#8B6914"/></linearGradient></defs></svg>
+      <div class="pause-line"></div>
+      <div class="pause-text">Take a moment to pause<br>before continuing</div>
+    </div>
+  </div>
+  <div class="btn-wrap">
+    <button class="btn btn-gray" id="btn2" onclick="goTo('page3')">CONTINUE</button>
+  </div>
+</div>
+
+<!-- PAGE 3 — REFLECT -->
+<div class="screen" id="page3">
+  <div class="bg-glow"></div>
+  <div class="tab-bar">
+    <div class="tab">Prepare</div>
+    <div class="tab active">Reflect</div>
+    <div class="tab">Review</div>
+  </div>
+  <div class="scroll-area" id="scroll3" onscroll="checkScroll('scroll3','btn3')">
+    <span class="step-num">02</span>
+    <div class="section-title">Reflect</div>
+    <div class="gold-rule-left"></div>
+    <div class="scroll-hint">↓</div>
+    <div class="scroll-block">Think through your day, moment by moment. Thank God for the gifts you notice.</div>
+    <div class="scroll-block">Allow the Lord to reveal aspects of your day that He would like to look at with you.</div>
+    <div class="scroll-block">Notice any missed opportunities or times you could have behaved differently.</div>
+    <div class="scroll-block">Call to mind your sins.</div>
+    <div class="scroll-block">Ask the Lord for His forgiveness. Feel His mercy and peace filling you.</div>
+    <div class="scroll-block prayer">O my God,
+I am heartily sorry for having offended you,
+and I detest all my sins because of your just punishments,
+but most of all because they offend you, my God,
+who are all good and deserving of all my love.
+I firmly resolve, with the help of your grace,
+to sin no more
+and to avoid the near occasions of sin.
+Amen.</div>
+    <div class="pause-wrap">
+      <svg width="48" height="56" viewBox="0 0 48 56" fill="none"><g stroke="#B8960C" stroke-width="1.2" stroke-linecap="round" opacity="0.7"><line x1="24" y1="3" x2="24" y2=".5"/><line x1="33" y1="5" x2="34.5" y2="2.8"/><line x1="40" y1="11" x2="42" y2="9"/><line x1="44" y1="19" x2="46.5" y2="18.5"/><line x1="15" y1="5" x2="13.5" y2="2.8"/><line x1="8" y1="11" x2="6" y2="9"/><line x1="4" y1="19" x2="1.5" y2="18.5"/></g><rect x="20" y="7" width="8" height="38" rx="1" fill="url(#p3cv)"/><rect x="9" y="16" width="30" height="8" rx="1" fill="url(#p3ch)"/><defs><linearGradient id="p3cv" x1="24" y1="7" x2="24" y2="45" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#D4AF37"/><stop offset="100%" stop-color="#8B6914"/></linearGradient><linearGradient id="p3ch" x1="9" y1="20" x2="39" y2="20" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#8B6914"/><stop offset="50%" stop-color="#D4AF37"/><stop offset="100%" stop-color="#8B6914"/></linearGradient></defs></svg>
+      <div class="pause-line"></div>
+      <div class="pause-text">Take a moment to pause<br>before continuing</div>
+    </div>
+  </div>
+  <div class="btn-wrap">
+    <button class="btn btn-gray" id="btn3" onclick="goTo('page4')">CONTINUE</button>
+  </div>
+</div>
+
+<!-- PAGE 4 — REVIEW -->
+<div class="screen" id="page4">
+  <div class="bg-glow"></div>
+  <div class="tab-bar">
+    <div class="tab">Prepare</div>
+    <div class="tab">Reflect</div>
+    <div class="tab active">Review</div>
+  </div>
+  <div class="scroll-area" id="scroll4" onscroll="checkScroll('scroll4','btn4')">
+    <span class="step-num">03</span>
+    <div class="section-title">Review</div>
+    <div class="gold-rule-left"></div>
+    <div class="scroll-hint">↓</div>
+    <div class="scroll-block">Tell God about the things that stood out as you reflected on your day. Did they draw you closer to God or push you away? Pay attention to your emotions.</div>
+    <div class="scroll-block">Allow the Spirit to draw your focus to one specific moment.</div>
+    <div class="scroll-block">What did you feel during that moment earlier today? How do you feel about it now? Where was the Lord in that moment? What is He calling you to now?</div>
+    <div class="scroll-block">Consider the following questions about your day overall: Where did you feel joy? What challenges you? What troubled you? Where did you see God moving? What would you like to do differently tomorrow?</div>
+    <div class="pause-wrap">
+      <svg width="48" height="56" viewBox="0 0 48 56" fill="none"><g stroke="#B8960C" stroke-width="1.2" stroke-linecap="round" opacity="0.7"><line x1="24" y1="3" x2="24" y2=".5"/><line x1="33" y1="5" x2="34.5" y2="2.8"/><line x1="40" y1="11" x2="42" y2="9"/><line x1="44" y1="19" x2="46.5" y2="18.5"/><line x1="15" y1="5" x2="13.5" y2="2.8"/><line x1="8" y1="11" x2="6" y2="9"/><line x1="4" y1="19" x2="1.5" y2="18.5"/></g><rect x="20" y="7" width="8" height="38" rx="1" fill="url(#p4cv)"/><rect x="9" y="16" width="30" height="8" rx="1" fill="url(#p4ch)"/><defs><linearGradient id="p4cv" x1="24" y1="7" x2="24" y2="45" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#D4AF37"/><stop offset="100%" stop-color="#8B6914"/></linearGradient><linearGradient id="p4ch" x1="9" y1="20" x2="39" y2="20" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#8B6914"/><stop offset="50%" stop-color="#D4AF37"/><stop offset="100%" stop-color="#8B6914"/></linearGradient></defs></svg>
+      <div class="pause-line"></div>
+      <div class="pause-text">Take a moment to pause<br>before continuing</div>
+    </div>
+  </div>
+  <div class="btn-wrap">
+    <button class="btn btn-gray" id="btn4" onclick="goTo('page5')">FINISH</button>
+  </div>
+</div>
+
+<!-- PAGE 5 — CLOSE WITH PRAYER -->
+<div class="screen" id="page5">
+  <div class="bg-glow"></div>
+  <div class="scroll-area">
+    <div style="padding-top:calc(var(--safe-top) + 24px);">
+      <div style="font-family:'Playfair Display',serif;font-size:32px;font-weight:700;text-align:center;margin-bottom:6px;">Close with prayer</div>
+      <div class="gold-rule"></div>
+      <div style="font-size:18px;line-height:1.9;margin-top:32px;white-space:pre-line;padding-bottom:8px;">Gracious and holy Father,
+grant us the intellect to understand You,
+reason to discern You, diligence to seek You,
+wisdom to find You, a spirit to know You,
+a heart to meditate upon You.
+May our ears hear You, may our eyes behold You,
+and may our tongues proclaim You.
+Give us grace that our way of life may be pleasing to You,
+that we may have the patience to wait for You and the perseverance to look for You.
+Grant us a perfect end - Your holy presence,
+a blessed resurrection, and life everlasting.
+We ask this through Jesus Christ, our Lord.</div>
+      <div style="font-size:15px;color:var(--gold-dim);font-style:italic;margin-top:16px;padding-bottom:20px;">— St. Benedict</div>
+    </div>
+  </div>
+  <div class="btn-wrap">
+    <button class="btn btn-gold" onclick="goTo('page6')">CONTINUE</button>
+  </div>
+</div>
+
+<!-- PAGE 6 — GOOD WORK -->
+<div class="screen" id="page6">
+  <div class="bg-glow-center"></div>
+  <div class="scroll-area" style="display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;">
+    <div style="padding-top:calc(var(--safe-top) + 20px);">
+      <svg width="72" height="80" viewBox="0 0 72 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g stroke="#B8960C" stroke-width="1.5" stroke-linecap="round" opacity="0.7">
+          <line x1="36" y1="4" x2="36" y2="0"/><line x1="50" y1="7" x2="52" y2="3.5"/>
+          <line x1="61" y1="16" x2="64" y2="13"/><line x1="66" y1="28" x2="70" y2="27"/>
+          <line x1="22" y1="7" x2="20" y2="3.5"/><line x1="11" y1="16" x2="8" y2="13"/>
+          <line x1="6" y1="28" x2="2" y2="27"/>
+        </g>
+        <rect x="30" y="10" width="12" height="58" rx="1.5" fill="url(#p6cv)"/>
+        <rect x="14" y="24" width="44" height="12" rx="1.5" fill="url(#p6ch)"/>
+        <defs>
+          <linearGradient id="p6cv" x1="36" y1="10" x2="36" y2="68" gradientUnits="userSpaceOnUse">
+            <stop offset="0%" stop-color="#D4AF37"/><stop offset="100%" stop-color="#8B6914"/>
+          </linearGradient>
+          <linearGradient id="p6ch" x1="14" y1="30" x2="58" y2="30" gradientUnits="userSpaceOnUse">
+            <stop offset="0%" stop-color="#8B6914"/><stop offset="50%" stop-color="#D4AF37"/><stop offset="100%" stop-color="#8B6914"/>
+          </linearGradient>
+        </defs>
+      </svg>
+      <div style="font-family:'Playfair Display',serif;font-size:36px;font-weight:700;margin:20px 0 6px;">Good work</div>
+      <div class="gold-rule"></div>
+      <div style="font-size:17px;line-height:1.75;color:var(--text-dim);margin-top:20px;max-width:280px;">You have completed today's examen. Be sure to come back tomorrow.</div>
+    </div>
+  </div>
+  <div class="btn-wrap">
+    <button class="btn btn-gold" onclick="closeApp()">CLOSE</button>
+  </div>
+</div>
+
+</div>
+<script>
+  // Set today's date
+  const d = new Date();
+  document.getElementById('todayDate').textContent =
+    d.toLocaleDateString('en-US', {weekday:'long', month:'long', day:'numeric', year:'numeric'});
+
+  // Navigate between pages
+  function goTo(id) {
+    document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
+    document.getElementById(id).classList.add('active');
+    // reset scroll position on tabbed pages
+    const num = id.replace('page','');
+    const sa = document.getElementById('scroll' + num);
+    if (sa) sa.scrollTop = 0;
+  }
+
+  // Unlock continue button when scrolled to bottom
+  function checkScroll(scrollId, btnId) {
+    const el = document.getElementById(scrollId);
+    const btn = document.getElementById(btnId);
+    if (!el || !btn) return;
+    const nearBottom = el.scrollHeight - el.scrollTop - el.clientHeight < 50;
+    if (nearBottom) {
+      btn.className = 'btn btn-gold';
+      btn.style.pointerEvents = 'auto';
+    }
+  }
+
+  // Close the web app
+  function closeApp() {
+    if (window.history.length > 1) window.history.back();
+    else window.close();
+  }
+</script>
+</body>
+</html>
